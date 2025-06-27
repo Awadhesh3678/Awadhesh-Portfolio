@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awadhesh_Portfolio</title>
+  <!-- Tailwind CSS CDN (keep this in HTML or download for local use) -->
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    // Tailwind CSS configuration
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#3b82f6", secondary: "#10b981" },
+          borderRadius: {
+            none: "0px",
+            sm: "4px",
+            DEFAULT: "8px",
+            md: "12px",
+            lg: "16px",
+            xl: "20px",
+            "2xl": "24px",
+            "3xl": "32px",
+            full: "9999px",
+            button: "8px", // Custom border-radius for buttons
+          },
+        },
+      },
+    };
+  </script>
+  <!-- Google Fonts: Pacifico for signature, Inter for general text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Remixicon CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <!-- Link to your external CSS file -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-white">
+  <!-- Scroll progress bar at the top -->
+  <div class="scroll-progress"></div>
+
+  <!-- Header section with navigation -->
+  <header class="fixed top-0 left-0 w-full bg-white bg-opacity-95 shadow-sm z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-['Pacifico'] text-primary">APS</a>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#home" class="text-gray-800 hover:text-primary transition-colors font-medium">Home</a>
+        <a href="#about" class="text-gray-800 hover:text-primary transition-colors font-medium">About</a>
+        <a href="#skills" class="text-gray-800 hover:text-primary transition-colors font-medium">Skills</a>
+        <a href="#projects" class="text-gray-800 hover:text-primary transition-colors font-medium">Projects</a>
+        <a href="#experience" class="text-gray-800 hover:text-primary transition-colors font-medium">Experience</a>
+        <a href="#contact" class="text-gray-800 hover:text-primary transition-colors font-medium">Contact</a>
+      </nav>
+      <!-- Mobile menu button for small screens -->
+      <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-800" id="mobile-menu-button">
+        <i class="ri-menu-line ri-lg"></i>
+      </button>
+    </div>
+    <!-- Mobile menu content (hidden by default) -->
+    <div class="mobile-menu hidden bg-white w-full absolute top-full left-0 shadow-md py-4 px-6 md:hidden">
+      <div class="flex flex-col space-y-4">
+        <a href="#home" class="text-gray-800 hover:text-primary transition-colors font-medium">Home</a>
+        <a href="#about" class="text-gray-800 hover:text-primary transition-colors font-medium">About</a>
+        <a href="#skills" class="text-gray-800 hover:text-primary transition-colors font-medium">Skills</a>
+        <a href="#projects" class="text-gray-800 hover:text-primary transition-colors font-medium">Projects</a>
+        <a href="#experience" class="text-gray-800 hover:text-primary transition-colors font-medium">Experience</a>
+        <a href="#contact" class="text-gray-800 hover:text-primary transition-colors font-medium">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home section (Hero) -->
+  <section id="home" class="min-h-screen flex items-center relative"
+    style="background-image: url('https://readdy.ai/api/search-image?query=professional%20modern%20abstract%20background%20with%20soft%20blue%20gradient%2C%20minimalist%20design%2C%20perfect%20for%20portfolio%20website%20hero%20section%2C%20clean%20and%20elegant%2C%20with%20subtle%20geometric%20patterns%2C%20high%20quality%20professional%20look&width=1920&height=1080&seq=1&orientation=landscape'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="container mx-auto px-6 py-20 relative z-10">
+      <div class="max-w-3xl">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
+          I'm Awadhesh Pratap Singh
+        </h1>
+        <!-- Typing effect for job titles -->
+        <h2 class="text-2xl md:text-3xl font-medium text-white mb-6 typing-effect" id="typing-text">
+          Aspiring Data Analyst | CSE Student
+        </h2>
+        <p class="text-xl text-white mb-8">
+          Turning raw data into meaningful insights through analysis & storytelling.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects"
+            class="px-8 py-3 bg-primary text-white font-medium rounded-button transition-all hover:bg-blue-600 !rounded-button whitespace-nowrap">View
+            My Work</a>
+          <a href="#contact"
+            class="px-8 py-3 bg-transparent border-2 border-white text-white font-medium rounded-button transition-all hover:bg-white hover:text-gray-900 !rounded-button whitespace-nowrap">Contact
+            Me</a>
+        </div>
+        <!-- Social media icons -->
+        <div class="flex space-x-4 mt-12">
+          <a href="https://github.com/Awadhesh3678"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-white bg-opacity-20 text-white hover:bg-opacity-30 transition-all">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/awadhesh-3678abc/"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-white bg-opacity-20 text-white hover:bg-opacity-30 transition-all">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me section -->
+<section id="about" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">About Me</h2>
+      <div class="w-20 h-1 bg-primary mx-auto"></div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <!-- Profile Image -->
+      <div class="md:w-2/5">
+        <div class="rounded-xl overflow-hidden shadow-lg transform transition-transform hover:scale-105">
+          <img
+            src="images/Profile.jpg"
+            alt="Awadhesh Pratap Singh"
+            class="w-full h-auto object-cover" />
+        </div>
+      </div>
+
+      <!-- About Content -->
+      <div class="md:w-3/5">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Who am I?</h3>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          I'm a highly motivated Computer Science Engineering student with a strong interest in Data Analytics. I have
+          hands-on experience in Python, Excel, Power BI, and SQL, and I love converting complex data into
+          easy-to-understand insights.
+        </p>
+        <p class="text-gray-700 mb-8 leading-relaxed">
+          I'm currently pursuing my B.Tech from Dr. APJ Abdul Kalam Technical University with a CGPA of 8.6. I've
+          worked on real-world projects like Sales Analysis, Road Accident Analysis, and Financial Fraud Detection
+          without using ML, focusing on dashboards and storytelling.
+        </p>
+
+        <!-- Personal Info Grid (Now Responsive) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <p class="text-gray-900 font-medium mb-1">Name:</p>
+            <p class="text-gray-700">Awadhesh Pratap Singh</p>
+          </div>
+          <div>
+            <p class="text-gray-900 font-medium mb-1">Email:</p>
+            <p class="text-gray-700 break-words">awadheshpratapsingh3678@gmail.com</p>
+          </div>
+          <div>
+            <p class="text-gray-900 font-medium mb-1">Location:</p>
+            <p class="text-gray-700">Kanpur, Uttar Pradesh</p>
+          </div>
+          <div>
+            <p class="text-gray-900 font-medium mb-1">Availability:</p>
+            <p class="text-gray-700">Open for Data Analyst Internships / Roles</p>
+          </div>
+        </div>
+
+        <!-- Resume Button -->
+        <div class="mt-8">
+          <a href="assets/RESUME 14-05.pdf"
+            class="px-8 py-3 bg-primary text-white font-medium transition-all hover:bg-blue-600 inline-flex items-center rounded-button whitespace-nowrap">
+            <i class="ri-download-line mr-2"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Skills section -->
+  <section id="skills" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-2">My Skills</h2>
+        <div class="w-20 h-1 bg-primary mx-auto"></div>
+        <p class="text-gray-700 mt-4 max-w-2xl mx-auto">
+          I’ve built strong analytical and technical skills through projects, certifications, and hands-on tools. Here's
+          a snapshot of my capabilities in Data Analytics and beyond.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Programming Languages -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+            <span class="w-8 h-8 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-2">
+              <i class="ri-code-s-slash-line"></i>
+            </span>
+            Programming & Query Languages
+          </h3>
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">Python</span>
+                <span class="text-gray-600">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">SQL</span>
+                <span class="text-gray-600">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">Java</span>
+                <span class="text-gray-600">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">C Language</span>
+                <span class="text-gray-600">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Analytics Tools -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+            <span class="w-8 h-8 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-2">
+              <i class="ri-bar-chart-2-line"></i>
+            </span>
+            Data Analytics & Visualization
+          </h3>
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">Excel</span>
+                <span class="text-gray-600">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">Power BI</span>
+                <span class="text-gray-600">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">Pandas</span>
+                <span class="text-gray-600">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">Matplotlib</span>
+                <span class="text-gray-600">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+            <span class="w-8 h-8 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-2">
+              <i class="ri-layout-2-line"></i>
+            </span>
+            Web Development
+          </h3>
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">HTML & CSS</span>
+                <span class="text-gray-600">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">Android Dev (Beginner)</span>
+                <span class="text-gray-600">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+            <span class="w-8 h-8 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-2">
+              <i class="ri-tools-line"></i>
+            </span>
+            Tools & Platforms
+          </h3>
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">Jupyter Notebook</span>
+                <span class="text-gray-600">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">VS Code / PyCharm</span>
+                <span class="text-gray-600">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-gray-700 font-medium">Git & GitHub</span>
+                <span class="text-gray-600">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="mt-16">
+        <h3 class="text-xl font-semibold text-gray-900 mb-6 text-center flex items-center justify-center">
+          <span class="w-8 h-8 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-2">
+            <i class="ri-user-heart-line"></i>
+          </span>
+          Soft Skills
+        </h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-full mx-auto mb-4">
+              <i class="ri-team-line ri-lg"></i>
+            </div>
+            <h4 class="text-gray-900 font-medium mb-2">Leadership</h4>
+            <p class="text-gray-700 text-sm">Led academic teams and managed project timelines effectively</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-full mx-auto mb-4">
+              <i class="ri-chat-3-line ri-lg"></i>
+            </div>
+            <h4 class="text-gray-900 font-medium mb-2">Communication</h4>
+            <p class="text-gray-700 text-sm">Confident in presenting data insights and team collaboration</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-full mx-auto mb-4">
+              <i class="ri-lightbulb-line ri-lg"></i>
+            </div>
+            <h4 class="text-gray-900 font-medium mb-2">Problem Solving</h4>
+            <p class="text-gray-700 text-sm">Capable of finding patterns in data and solving real-world problems</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-full mx-auto mb-4">
+              <i class="ri-time-line ri-lg"></i>
+            </div>
+            <h4 class="text-gray-900 font-medium mb-2">Time Management</h4>
+            <p class="text-gray-700 text-sm">Efficient in managing tasks, college work, and self-learning</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-2">My Projects</h2>
+        <div class="w-20 h-1 bg-primary mx-auto"></div>
+        <p class="text-gray-700 mt-4 max-w-2xl mx-auto">
+          Here are some of my recent projects that showcase my skills and
+          expertise.
+        </p>
+      </div>
+
+      <!-- Project filter buttons -->
+      <div class="flex mb-8 justify-center flex-wrap gap-2">
+          <button class="project-filter px-4 py-2 rounded-full bg-primary text-white !rounded-full whitespace-nowrap"
+            data-filter="all">
+            All
+          </button>
+          <button
+            class="project-filter px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-full whitespace-nowrap"
+            data-filter="data">
+            Data Analytics
+          </button>
+          <button
+            class="project-filter px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-full whitespace-nowrap"
+            data-filter="python-console">
+            Python (Console)
+          </button>
+          <button
+            class="project-filter px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-full whitespace-nowrap"
+            data-filter="java-console">
+            Java (Console)
+          </button>
+          <button
+            class="project-filter px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-full whitespace-nowrap"
+            data-filter="web">
+            Web
+          </button>
+          <button
+            class="project-filter px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-full whitespace-nowrap"
+            data-filter="mobile">
+            Mobile
+          </button>
+        
+      </div>
+
+      <!-- Project cards grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Data Analytics Projects -->
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="data">
+          <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Road%20Accident%20Analysis"
+            alt="Road Accident Analysis in India" class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-primary bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              Road Accident Analysis in India
+            </h4>
+            <p class="text-white text-center mb-4">
+              Analysis of state-wise and yearly trends in road accidents in India, providing insights on causes using
+              Kaggle dataset.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Excel</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Power BI</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Python</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-primary font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-primary !rounded-button whitespace-nowrap">Kaggle</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              Road Accident Analysis in India
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Analysis of state-wise and yearly trends in road accidents in India, providing insights on causes.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Excel</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Power BI</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="data">
+          <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Coffee%20Shop%20Sales"
+            alt="Coffee Shop Sales Analysis" class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-primary bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              Coffee Shop Sales Analysis
+            </h4>
+            <p class="text-white text-center mb-4">
+              Dashboard displaying monthly revenue, peak sales hours, and top-selling items for a coffee shop.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Excel</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Power BI</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-primary font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-primary !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              Coffee Shop Sales Analysis
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Monthly revenue, peak sales hours, and top-selling items dashboard.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Excel</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="data">
+          <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Financial%20Fraud%20Detection"
+            alt="Financial Fraud Detection" class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-primary bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              Financial Fraud Detection
+            </h4>
+            <p class="text-white text-center mb-4">
+              Rule-based fraud detection (no ML) and transaction pattern analysis for online transactions.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Excel</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Python</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Power BI</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-primary font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-primary !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              Financial Fraud Detection
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Rule-based fraud detection (no ML) and transaction pattern analysis.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Excel</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Python</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="data">
+          <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Amazon%20Sales%20Analysis"
+            alt="Amazon Sales Analysis" class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-primary bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              Amazon Sales Analysis
+            </h4>
+            <p class="text-white text-center mb-4">
+              Analysis of product category trends, seasonal insights, and revenue breakdown from Amazon sales data.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Excel</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Power BI</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-primary font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-primary !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              Amazon Sales Analysis
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Product category trends, seasonal insights, and revenue breakdown.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Excel</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="data">
+          <img src="https://placehold.co/600x400/3b82f6/ffffff?text=FND%20Dataset%20Report" alt="FND Dataset Report"
+            class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-primary bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              FND Dataset Report
+            </h4>
+            <p class="text-white text-center mb-4">
+              Report with custom visuals and KPIs generated from an unspecified FND dataset.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Excel</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Power BI</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-primary font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Report</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-primary !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              FND Dataset Report
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Custom visuals + KPIs from FND dataset.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Excel</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python Console Based Projects -->
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="python-console">
+          <img src="https://placehold.co/600x400/555/ffffff?text=Python%20Console%20App"
+            alt="Student Marks Management System" class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-gray-700 bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              Student Marks Management System (Console App)
+            </h4>
+            <p class="text-white text-center mb-4">
+              A console-based Python application for managing student records, including adding, searching, and
+              displaying marks.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Python</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Console</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-gray-800 font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-gray-800 !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              Student Marks Management System (Console App)
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Add/search/display student records from console.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-xs">Python</span>
+              <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-xs">Console</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Java Console Based Projects -->
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="java-console">
+          <img src="https://placehold.co/600x400/50B14F/ffffff?text=Currency%20Converter%20Java"
+            alt="Currency Converter (Java)" class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-green-600 bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              Currency Converter (Java)
+            </h4>
+            <p class="text-white text-center mb-4">
+              A simple Java application for converting currencies, featuring real-time or static exchange rates.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Java</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Console</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-green-600 font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-green-600 !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              Currency Converter (Java)
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Real-time or static exchange rates | Simple Java logic/UI.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs">Java</span>
+              <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs">Console</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="java-console">
+          <img src="https://placehold.co/600x400/50B14F/ffffff?text=Banking%20System%20Java"
+            alt="Java Internship – Banking System" class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-green-600 bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              Banking System (Java Internship)
+            </h4>
+            <p class="text-white text-center mb-4">
+              Simulation of a banking system covering account creation, balance inquiry, withdrawal, and mini-statement
+              functionalities (console-based).
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Java</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Console</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-green-600 font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-green-600 !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              Banking System (Java Internship)
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Account creation, balance, withdrawal, mini-statement simulation.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs">Java</span>
+              <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs">Console</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development Projects -->
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="web">
+          <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Restaurant%20Listing"
+            alt="Restaurant Listing Website (Lucknow)" class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-primary bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              Restaurant Listing Website (Lucknow)
+            </h4>
+            <p class="text-white text-center mb-4">
+              A static website showcasing various restaurants in Lucknow, built with fundamental web technologies.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">HTML</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">CSS</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">JavaScript</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-primary font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-primary !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              Restaurant Listing Website (Lucknow)
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Static site with restaurant details, built in 3rd semester.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">HTML</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">CSS</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="web">
+          <img src="https://placehold.co/600x400/3b82f6/ffffff?text=AI-driven%20Portfolio"
+            alt="AI-driven Portfolio Website" class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-primary bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              AI-driven Portfolio Website
+            </h4>
+            <p class="text-white text-center mb-4">
+              A fully responsive portfolio website featuring AI-driven elements, a "Contact Me" API, and filterable
+              project sections.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">HTML</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">CSS</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Tailwind CSS</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">JavaScript</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">API Integration</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-primary font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-primary !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              AI-driven Portfolio Website
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Fully responsive | “Contact Me” API | Filterable project section.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">HTML</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">CSS</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">Tailwind CSS</span>
+              <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-xs">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Projects -->
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="mobile">
+          <img src="https://placehold.co/600x400/10b981/ffffff?text=Motor%20Switching%20App"
+            alt="Android Motor Switching App" class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-secondary bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              Android Motor Switching App
+            </h4>
+            <p class="text-white text-center mb-4">
+              Basic IoT control interface via Android application for motor switching.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Android</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-secondary font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-secondary !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              Android Motor Switching App
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Basic IoT control interface via Android.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-green-100 text-secondary rounded-full text-xs">Android</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="mobile">
+          <img src="https://placehold.co/600x400/10b981/ffffff?text=Calculator%20App" alt="Calculator App (Android)"
+            class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-secondary bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              Calculator App (Android)
+            </h4>
+            <p class="text-white text-center mb-4">
+              Simple arithmetic calculator with an intuitive Android Studio UI.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Android</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-secondary font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-secondary !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              Calculator App (Android)
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Simple arithmetic calculator with Android Studio UI.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-green-100 text-secondary rounded-full text-xs">Android</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+          data-category="mobile">
+          <img src="https://placehold.co/600x400/10b981/ffffff?text=Internpedia%20App"
+            alt="Android App – Internpedia Java Internship" class="w-full h-64 object-cover" />
+          <div
+            class="project-overlay absolute inset-0 bg-secondary bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity">
+            <h4 class="text-white text-xl font-semibold mb-2">
+              Internpedia Android App (Java Internship)
+            </h4>
+            <p class="text-white text-center mb-4">
+              A basic Android application developed during the Internpedia Java Internship training program.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 justify-center">
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Android</span>
+              <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Java</span>
+            </div>
+            <div class="flex space-x-3">
+              <a href="#"
+                class="px-4 py-2 bg-white text-secondary font-medium rounded-button hover:bg-gray-100 !rounded-button whitespace-nowrap">View
+                Project</a>
+              <a href="#"
+                class="px-4 py-2 bg-transparent border border-white text-white font-medium rounded-button hover:bg-white hover:text-secondary !rounded-button whitespace-nowrap">GitHub</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-gray-900 text-xl font-semibold mb-2">
+              Internpedia Android App (Java Internship)
+            </h4>
+            <p class="text-gray-700 mb-4">
+              Basic app built during internship training.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-green-100 text-secondary rounded-full text-xs">Android</span>
+              <span class="px-3 py-1 bg-green-100 text-secondary rounded-full text-xs">Java</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Experience section -->
+  <section id="experience" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-2">My Workshops & Internships</h2>
+        <div class="w-20 h-1 bg-primary mx-auto"></div>
+        <p class="text-gray-700 mt-4 max-w-2xl mx-auto">
+          I have participated in various internships and workshops that helped me explore real-world applications of my
+          academic knowledge in computer science and data analytics.
+        </p>
+      </div>
+
+      <div class="relative max-w-3xl mx-auto">
+        <!-- Vertical timeline line -->
+        <div class="absolute left-1/2 -ml-px w-0.5 h-full bg-gray-200"></div>
+
+        <!-- Workshop/Internship 1 -->
+        <div class="timeline-item flex items-start w-full mb-8">
+          <!-- Timeline dot -->
+          <div class="timeline-dot absolute w-3 h-3 bg-primary rounded-full mt-2.5 z-10"></div>
+          <div
+            class="timeline-content bg-white p-6 rounded-lg shadow-md w-full md:w-[calc(50%-20px)] flex flex-col transition-transform transform hover:scale-105">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Java Development Internship</h3>
+            <p class="text-primary font-medium mb-2">Internpedia | Jan 2024 – Mar 2024</p>
+            <p class="text-gray-700 leading-relaxed">
+              Completed a virtual internship focused on basic Java programming, covering OOPs concepts, file handling,
+              and project development using Java.
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mt-4 space-y-1">
+              <li>Created a mini banking application using Java Swing and JDBC.</li>
+              <li>Learned hands-on version control with Git during team tasks.</li>
+              <li>Collaborated with peers to present project ideas and demos.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Workshop 2 -->
+        <div class="timeline-item flex items-start w-full mb-8">
+          <!-- Timeline dot -->
+          <div class="timeline-dot absolute w-3 h-3 bg-primary rounded-full mt-2.5 z-10"></div>
+          <div
+            class="timeline-content bg-white p-6 rounded-lg shadow-md w-full md:w-[calc(50%-20px)] flex flex-col transition-transform transform hover:scale-105">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Python Development Workshop</h3>
+            <p class="text-primary font-medium mb-2">Softpro India | Sep 2023</p>
+            <p class="text-gray-700 leading-relaxed">
+              Participated in a hands-on workshop that introduced core Python concepts, including data types, control
+              structures, and practical scripting.
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mt-4 space-y-1">
+              <li>Developed a calculator and simple CRUD application using Python.</li>
+              <li>Explored how Python is used in data analytics and web development.</li>
+              <li>Built foundational knowledge in Pandas and data visualization.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Workshop 3 -->
+        <div class="timeline-item flex items-start w-full mb-8">
+          <!-- Timeline dot -->
+          <div class="timeline-dot absolute w-3 h-3 bg-primary rounded-full mt-2.5 z-10"></div>
+          <div
+            class="timeline-content bg-white p-6 rounded-lg shadow-md w-full md:w-[calc(50%-20px)] flex flex-col transition-transform transform hover:scale-105">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Ethical Hacking Workshop</h3>
+            <p class="text-primary font-medium mb-2">Netcamp Solutions Pvt. Ltd. | Aug 2023</p>
+            <p class="text-gray-700 leading-relaxed">
+              Attended a 2-day technical workshop on ethical hacking, network security, and cyber forensics conducted by
+              industry experts.
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mt-4 space-y-1">
+              <li>Understood ethical hacking tools like Kali Linux and Wireshark.</li>
+              <li>Simulated basic attacks in controlled lab environments.</li>
+              <li>Learned the fundamentals of cybersecurity and secure coding.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-2">Get in Touch</h2>
+        <div class="w-20 h-1 bg-primary mx-auto"></div>
+        <p class="text-gray-700 mt-4 max-w-2xl mx-auto">
+          Have a project in mind or just want to say hi? Feel free to drop a message. I'm always open to discussing new
+          ideas and opportunities.
+        </p>
+      </div>
+
+      <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <form id="contact-form" action="https://formspree.io/f/manjaoea" method="POST" class="space-y-6">
+          <div>
+            <label for="name" class="block text-gray-800 font-medium mb-2">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Awadhesh Pratap Singh" required
+              class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+          <div>
+            <label for="email" class="block text-gray-800 font-medium mb-2">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required
+              class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+          <div>
+            <label for="subject" class="block text-gray-800 font-medium mb-2">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Let's connect!" required
+              class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+          <div>
+            <label for="message" class="block text-gray-800 font-medium mb-2">Your Message</label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Hi Awadhesh, I would like to collaborate with you..." required
+              class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary resize-y"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full px-6 py-3 bg-primary text-white font-medium rounded-md transition duration-300 hover:bg-blue-600">
+            Send Message
+          </button>
+          <div id="status-msg" class="text-center mt-4 text-sm font-semibold"></div>
+        </form>
+      </div>
+
+      <div class="text-center mt-12">
+        <p class="text-gray-700 text-lg mb-4">You can also connect with me on:</p>
+        <div class="flex justify-center space-x-6">
+          <a href="https://github.com/Awadhesh3678" class="text-gray-700 hover:text-primary transition text-2xl"><i
+              class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/awadhesh-3678abc/"
+            class="text-gray-700 hover:text-primary transition text-2xl"><i class="ri-linkedin-fill"></i></a>
+          <a href="mailto:awadheshpratapsingh3678@gmail.com?subject=Let%27s%20Connect&body=Hi%20Awadhesh%2C%20I%20would%20like%20to%20connect%20with%20you..."
+   class="text-gray-700 hover:text-primary transition text-2xl">
+  <i class="ri-mail-line"></i>
+</a>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer section -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Awadhesh Pratap Singh. All rights reserved.</p>
+      <p class="mt-2 text-gray-400">Designed with ❤️ by Awadhesh Pratap Singh</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <a href="#home"
+    class="back-to-top w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:bg-blue-600 transition-all">
+    <i class="ri-arrow-up-line ri-lg"></i>
+  </a>
+
+  <!-- Link to your external JavaScript file -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
