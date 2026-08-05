@@ -9,7 +9,1029 @@
   <script src="https://cdn.tailwindcss.com/3.4.16"></script>
   <script>
     // Tailwind CSS configuration
+    tailwind.config = {<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awadhesh Pratap Singh — Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Awadhesh Pratap Singh — Aspiring Data Analyst, CSE Student specializing in Python, Power BI, SQL, and data storytelling." />
+  <meta name="keywords" content="Awadhesh Pratap Singh, Data Analyst, Portfolio, Python, Power BI, SQL, Excel, Data Analytics" />
+  <meta name="author" content="Awadhesh Pratap Singh" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Awadhesh Pratap Singh — Data Analyst Portfolio" />
+  <meta property="og:description" content="Turning raw data into meaningful insights through analysis & storytelling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/Profile.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Awadhesh Pratap Singh — Data Analyst Portfolio" />
+  <meta name="twitter:description" content="Turning raw data into meaningful insights through analysis & storytelling." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
     tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6366f1',
+            'primary-light': '#818cf8',
+            secondary: '#22d3ee',
+            accent: '#a855f7',
+            emerald: '#34d399',
+            dark: {
+              950: '#020617',
+              900: '#0f172a',
+              800: '#1e293b',
+              700: '#334155',
+              600: '#475569',
+              500: '#64748b',
+              400: '#94a3b8',
+              300: '#cbd5e1',
+              200: '#e2e8f0',
+              50: '#f8fafc',
+            }
+          },
+          borderRadius: {
+            none: '0px',
+            sm: '4px',
+            DEFAULT: '8px',
+            md: '12px',
+            lg: '16px',
+            xl: '20px',
+            '2xl': '24px',
+            '3xl': '32px',
+            full: '9999px',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            signature: ['Pacifico', 'cursive'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Remixicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-dark-950">
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header id="main-header" class="fixed top-0 left-0 w-full bg-transparent z-50 transition-all duration-300">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-signature gradient-text">APS</a>
+      <nav class="hidden md:flex space-x-8" id="desktop-nav">
+        <a href="#home" class="nav-link text-dark-400 hover:text-dark-50 font-medium">Home</a>
+        <a href="#about" class="nav-link text-dark-400 hover:text-dark-50 font-medium">About</a>
+        <a href="#skills" class="nav-link text-dark-400 hover:text-dark-50 font-medium">Skills</a>
+        <a href="#projects" class="nav-link text-dark-400 hover:text-dark-50 font-medium">Projects</a>
+        <a href="#experience" class="nav-link text-dark-400 hover:text-dark-50 font-medium">Experience</a>
+        <a href="#contact" class="nav-link text-dark-400 hover:text-dark-50 font-medium">Contact</a>
+      </nav>
+      <button class="md:hidden w-10 h-10 flex items-center justify-center text-dark-300 hover:text-dark-50 transition-colors"
+        id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="ri-menu-line ri-lg"></i>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden bg-dark-900 border-t border-dark-700 w-full absolute top-full left-0 py-4 px-6 md:hidden">
+      <div class="flex flex-col space-y-4">
+        <a href="#home" class="text-dark-400 hover:text-dark-50 transition-colors font-medium py-1">Home</a>
+        <a href="#about" class="text-dark-400 hover:text-dark-50 transition-colors font-medium py-1">About</a>
+        <a href="#skills" class="text-dark-400 hover:text-dark-50 transition-colors font-medium py-1">Skills</a>
+        <a href="#projects" class="text-dark-400 hover:text-dark-50 transition-colors font-medium py-1">Projects</a>
+        <a href="#experience" class="text-dark-400 hover:text-dark-50 transition-colors font-medium py-1">Experience</a>
+        <a href="#contact" class="text-dark-400 hover:text-dark-50 transition-colors font-medium py-1">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="min-h-screen flex items-center relative hero-bg">
+    <!-- Subtle grid pattern overlay -->
+    <div class="absolute inset-0 opacity-[0.03]"
+      style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+    </div>
+    <div class="container mx-auto px-6 py-20 relative z-10">
+      <div class="max-w-3xl">
+        <p class="text-secondary font-medium text-lg mb-4 reveal">👋 Hello, I'm</p>
+        <h1 class="text-5xl md:text-7xl font-extrabold text-dark-50 mb-4 leading-tight reveal">
+          Awadhesh Pratap <span class="gradient-text">Singh</span>
+        </h1>
+        <h2 class="text-xl md:text-2xl font-medium text-dark-400 mb-6 typing-effect" id="typing-text"></h2>
+        <p class="text-lg text-dark-400 mb-10 max-w-xl reveal reveal-delay-1">
+          Turning raw data into meaningful insights through analysis &amp; storytelling.
+        </p>
+        <div class="flex flex-wrap gap-4 reveal reveal-delay-2">
+          <a href="#projects" class="btn-primary">
+            <i class="ri-folder-line mr-2"></i>View My Work
+          </a>
+          <a href="#contact" class="btn-outline">
+            <i class="ri-mail-line mr-2"></i>Contact Me
+          </a>
+        </div>
+        <!-- Social media icons -->
+        <div class="flex space-x-4 mt-12 reveal reveal-delay-3">
+          <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+            class="social-icon w-11 h-11 flex items-center justify-center rounded-xl bg-dark-800 border border-dark-700 text-dark-400 hover:text-secondary hover:border-secondary/30">
+            <i class="ri-github-fill ri-lg"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/awadhesh-3678abc/" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+            class="social-icon w-11 h-11 flex items-center justify-center rounded-xl bg-dark-800 border border-dark-700 text-dark-400 hover:text-primary hover:border-primary/30">
+            <i class="ri-linkedin-fill ri-lg"></i>
+          </a>
+          <a href="mailto:awadheshpratapsingh3678@gmail.com" aria-label="Send Email"
+            class="social-icon w-11 h-11 flex items-center justify-center rounded-xl bg-dark-800 border border-dark-700 text-dark-400 hover:text-emerald hover:border-emerald/30">
+            <i class="ri-mail-fill ri-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll hint -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-dark-500">
+      <span class="text-xs tracking-widest uppercase">Scroll</span>
+      <div class="w-5 h-8 rounded-full border-2 border-dark-500 flex justify-center pt-1.5">
+        <div class="w-1 h-2 bg-dark-400 rounded-full animate-bounce"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="py-24 relative">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark-50 mb-3">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+        <!-- Profile Image -->
+        <div class="md:w-2/5 reveal">
+          <div class="gradient-ring max-w-sm mx-auto">
+            <img src="images/Profile.jpg" alt="Awadhesh Pratap Singh" class="w-full h-auto object-cover" />
+          </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="md:w-3/5 reveal reveal-delay-1">
+          <h3 class="text-2xl font-semibold text-dark-50 mb-4">Who am I?</h3>
+          <p class="text-dark-400 mb-5 leading-relaxed">
+            I'm a highly motivated Computer Science Engineering student with a strong interest in Data Analytics. I have
+            hands-on experience in Python, Excel, Power BI, and SQL, and I love converting complex data into
+            easy-to-understand insights.
+          </p>
+          <p class="text-dark-400 mb-8 leading-relaxed">
+            I'm currently pursuing my B.Tech from Dr. APJ Abdul Kalam Technical University with a CGPA of 8.6. I've
+            worked on real-world projects like Sales Analysis, Road Accident Analysis, and Financial Fraud Detection
+            without using ML, focusing on dashboards and storytelling.
+          </p>
+
+          <!-- Personal Info Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+            <div class="glass-card p-4">
+              <p class="text-dark-500 text-sm font-medium mb-1">Name</p>
+              <p class="text-dark-50 font-medium">Awadhesh Pratap Singh</p>
+            </div>
+            <div class="glass-card p-4">
+              <p class="text-dark-500 text-sm font-medium mb-1">Email</p>
+              <p class="text-dark-50 font-medium break-words text-sm">awadheshpratapsingh3678@gmail.com</p>
+            </div>
+            <div class="glass-card p-4">
+              <p class="text-dark-500 text-sm font-medium mb-1">Location</p>
+              <p class="text-dark-50 font-medium">Kanpur, Uttar Pradesh</p>
+            </div>
+            <div class="glass-card p-4">
+              <p class="text-dark-500 text-sm font-medium mb-1">Availability</p>
+              <p class="text-emerald font-medium text-sm">Open for Data Analyst Internships</p>
+            </div>
+          </div>
+
+          <!-- Resume Button -->
+          <a href="assets/Awadhesh_Resume.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">
+            <i class="ri-download-line mr-2"></i>Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="py-24 relative">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark-50 mb-3">My Skills</h2>
+        <div class="section-divider"></div>
+        <p class="text-dark-400 mt-5 max-w-2xl mx-auto">
+          I've built strong analytical and technical skills through projects, certifications, and hands-on tools. Here's
+          a snapshot of my capabilities in Data Analytics and beyond.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        <!-- Programming Languages -->
+        <div class="glass-card p-7 reveal">
+          <h3 class="text-lg font-semibold text-dark-50 mb-6 flex items-center">
+            <span class="w-9 h-9 flex items-center justify-center bg-primary/10 text-primary rounded-lg mr-3">
+              <i class="ri-code-s-slash-line"></i>
+            </span>
+            Programming &amp; Query Languages
+          </h3>
+          <div class="space-y-5">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">Python</span>
+                <span class="text-secondary text-sm font-semibold">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">SQL</span>
+                <span class="text-secondary text-sm font-semibold">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">Java</span>
+                <span class="text-secondary text-sm font-semibold">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">C Language</span>
+                <span class="text-secondary text-sm font-semibold">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="65"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Analytics Tools -->
+        <div class="glass-card p-7 reveal reveal-delay-1">
+          <h3 class="text-lg font-semibold text-dark-50 mb-6 flex items-center">
+            <span class="w-9 h-9 flex items-center justify-center bg-secondary/10 text-secondary rounded-lg mr-3">
+              <i class="ri-bar-chart-2-line"></i>
+            </span>
+            Data Analytics &amp; Visualization
+          </h3>
+          <div class="space-y-5">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">Excel</span>
+                <span class="text-secondary text-sm font-semibold">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">Power BI</span>
+                <span class="text-secondary text-sm font-semibold">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">Pandas</span>
+                <span class="text-secondary text-sm font-semibold">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">Matplotlib</span>
+                <span class="text-secondary text-sm font-semibold">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="glass-card p-7 reveal">
+          <h3 class="text-lg font-semibold text-dark-50 mb-6 flex items-center">
+            <span class="w-9 h-9 flex items-center justify-center bg-accent/10 text-accent rounded-lg mr-3">
+              <i class="ri-layout-2-line"></i>
+            </span>
+            Web Development
+          </h3>
+          <div class="space-y-5">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">HTML &amp; CSS</span>
+                <span class="text-secondary text-sm font-semibold">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">Android Dev (Beginner)</span>
+                <span class="text-secondary text-sm font-semibold">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="glass-card p-7 reveal reveal-delay-1">
+          <h3 class="text-lg font-semibold text-dark-50 mb-6 flex items-center">
+            <span class="w-9 h-9 flex items-center justify-center bg-emerald/10 text-emerald rounded-lg mr-3">
+              <i class="ri-tools-line"></i>
+            </span>
+            Tools &amp; Platforms
+          </h3>
+          <div class="space-y-5">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">Jupyter Notebook</span>
+                <span class="text-secondary text-sm font-semibold">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">VS Code / PyCharm</span>
+                <span class="text-secondary text-sm font-semibold">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-dark-300 font-medium text-sm">Git &amp; GitHub</span>
+                <span class="text-secondary text-sm font-semibold">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="mt-16 reveal">
+        <h3 class="text-lg font-semibold text-dark-50 mb-8 text-center flex items-center justify-center">
+          <span class="w-9 h-9 flex items-center justify-center bg-primary/10 text-primary rounded-lg mr-3">
+            <i class="ri-user-heart-line"></i>
+          </span>
+          Soft Skills
+        </h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
+          <div class="soft-skill-card glass-card p-6 text-center">
+            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-xl mx-auto mb-4">
+              <i class="ri-team-line ri-lg"></i>
+            </div>
+            <h4 class="text-dark-50 font-semibold mb-2 text-sm">Leadership</h4>
+            <p class="text-dark-500 text-xs leading-relaxed">Led academic teams and managed project timelines effectively</p>
+          </div>
+          <div class="soft-skill-card glass-card p-6 text-center">
+            <div class="w-12 h-12 flex items-center justify-center bg-secondary/10 text-secondary rounded-xl mx-auto mb-4">
+              <i class="ri-chat-3-line ri-lg"></i>
+            </div>
+            <h4 class="text-dark-50 font-semibold mb-2 text-sm">Communication</h4>
+            <p class="text-dark-500 text-xs leading-relaxed">Confident in presenting data insights and team collaboration</p>
+          </div>
+          <div class="soft-skill-card glass-card p-6 text-center">
+            <div class="w-12 h-12 flex items-center justify-center bg-accent/10 text-accent rounded-xl mx-auto mb-4">
+              <i class="ri-lightbulb-line ri-lg"></i>
+            </div>
+            <h4 class="text-dark-50 font-semibold mb-2 text-sm">Problem Solving</h4>
+            <p class="text-dark-500 text-xs leading-relaxed">Capable of finding patterns in data and solving real-world problems</p>
+          </div>
+          <div class="soft-skill-card glass-card p-6 text-center">
+            <div class="w-12 h-12 flex items-center justify-center bg-emerald/10 text-emerald rounded-xl mx-auto mb-4">
+              <i class="ri-time-line ri-lg"></i>
+            </div>
+            <h4 class="text-dark-50 font-semibold mb-2 text-sm">Time Management</h4>
+            <p class="text-dark-500 text-xs leading-relaxed">Efficient in managing tasks, college work, and self-learning</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="py-24 relative">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark-50 mb-3">My Projects</h2>
+        <div class="section-divider"></div>
+        <p class="text-dark-400 mt-5 max-w-2xl mx-auto">
+          Here are some of my recent projects that showcase my skills and expertise.
+        </p>
+      </div>
+
+      <!-- Project filter buttons -->
+      <div class="flex mb-10 justify-center flex-wrap gap-2 reveal">
+        <button class="project-filter px-5 py-2 rounded-full bg-primary text-white text-sm font-medium"
+          data-filter="all">All</button>
+        <button
+          class="project-filter px-5 py-2 rounded-full text-dark-400 bg-dark-800 border border-dark-700 hover:border-primary/30 text-sm font-medium"
+          data-filter="data">Data Analytics</button>
+        <button
+          class="project-filter px-5 py-2 rounded-full text-dark-400 bg-dark-800 border border-dark-700 hover:border-primary/30 text-sm font-medium"
+          data-filter="python-console">Python (Console)</button>
+        <button
+          class="project-filter px-5 py-2 rounded-full text-dark-400 bg-dark-800 border border-dark-700 hover:border-primary/30 text-sm font-medium"
+          data-filter="java-console">Java (Console)</button>
+        <button
+          class="project-filter px-5 py-2 rounded-full text-dark-400 bg-dark-800 border border-dark-700 hover:border-primary/30 text-sm font-medium"
+          data-filter="web">Web</button>
+        <button
+          class="project-filter px-5 py-2 rounded-full text-dark-400 bg-dark-800 border border-dark-700 hover:border-primary/30 text-sm font-medium"
+          data-filter="mobile">Mobile</button>
+      </div>
+
+      <!-- Project cards grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+        <!-- Project 1: Road Accident Analysis -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal" data-category="data">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-primary/20 via-dark-800 to-secondary/20">
+            <i class="ri-road-map-line text-5xl text-primary/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">Road Accident Analysis in India</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">
+              Analysis of state-wise and yearly trends in road accidents in India, providing insights on causes using Kaggle dataset.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Python</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">Road Accident Analysis in India</h4>
+            <p class="text-dark-400 text-sm mb-4">Analysis of state-wise and yearly trends in road accidents in India.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Coffee Shop Sales -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal reveal-delay-1" data-category="data">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-amber-500/15 via-dark-800 to-primary/20">
+            <i class="ri-cup-line text-5xl text-amber-400/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">Coffee Shop Sales Analysis</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">
+              Dashboard displaying monthly revenue, peak sales hours, and top-selling items for a coffee shop.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Power BI</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">Coffee Shop Sales Analysis</h4>
+            <p class="text-dark-400 text-sm mb-4">Monthly revenue, peak sales hours, and top-selling items dashboard.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Financial Fraud Detection -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal reveal-delay-2" data-category="data">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-red-500/15 via-dark-800 to-accent/20">
+            <i class="ri-shield-check-line text-5xl text-red-400/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">Financial Fraud Detection</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">
+              Rule-based fraud detection (no ML) and transaction pattern analysis for online transactions.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Power BI</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">Financial Fraud Detection</h4>
+            <p class="text-dark-400 text-sm mb-4">Rule-based fraud detection (no ML) and transaction pattern analysis.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Amazon Sales Analysis -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal" data-category="data">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-orange-500/15 via-dark-800 to-secondary/20">
+            <i class="ri-shopping-cart-2-line text-5xl text-orange-400/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">Amazon Sales Analysis</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">
+              Analysis of product category trends, seasonal insights, and revenue breakdown from Amazon sales data.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Power BI</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">Amazon Sales Analysis</h4>
+            <p class="text-dark-400 text-sm mb-4">Product category trends, seasonal insights, and revenue breakdown.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: FND Dataset Report -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal reveal-delay-1" data-category="data">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-primary/20 via-dark-800 to-emerald/15">
+            <i class="ri-file-chart-line text-5xl text-primary/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">FND Dataset Report</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">
+              Report with custom visuals and KPIs generated from an FND dataset.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Power BI</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Report</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">FND Dataset Report</h4>
+            <p class="text-dark-400 text-sm mb-4">Custom visuals + KPIs from FND dataset.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Student Marks Management (Python Console) -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal reveal-delay-2" data-category="python-console">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-yellow-500/15 via-dark-800 to-primary/15">
+            <i class="ri-terminal-box-line text-5xl text-yellow-400/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">Student Marks Management System</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">
+              A console-based Python application for managing student records, including adding, searching, and displaying marks.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Console</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">Student Marks Management System</h4>
+            <p class="text-dark-400 text-sm mb-4">Add/search/display student records from console.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Console</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Currency Converter (Java Console) -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal" data-category="java-console">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-emerald/15 via-dark-800 to-secondary/15">
+            <i class="ri-money-dollar-circle-line text-5xl text-emerald/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">Currency Converter (Java)</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">
+              A simple Java application for converting currencies, featuring real-time or static exchange rates.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Console</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">Currency Converter (Java)</h4>
+            <p class="text-dark-400 text-sm mb-4">Real-time or static exchange rates | Simple Java logic.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Console</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Banking System (Java Console) -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal reveal-delay-1" data-category="java-console">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-emerald/15 via-dark-800 to-accent/15">
+            <i class="ri-bank-line text-5xl text-emerald/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">Banking System (Java Internship)</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">
+              Simulation of a banking system covering account creation, balance inquiry, withdrawal, and mini-statement functionalities.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Console</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">Banking System (Java Internship)</h4>
+            <p class="text-dark-400 text-sm mb-4">Account creation, balance, withdrawal, mini-statement simulation.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Console</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: Restaurant Listing Website -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal reveal-delay-2" data-category="web">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-primary/20 via-dark-800 to-secondary/15">
+            <i class="ri-restaurant-line text-5xl text-primary/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">Restaurant Listing Website (Lucknow)</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">
+              A static website showcasing various restaurants in Lucknow, built with fundamental web technologies.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">Restaurant Listing Website (Lucknow)</h4>
+            <p class="text-dark-400 text-sm mb-4">Static site with restaurant details, built in 3rd semester.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 10: AI-driven Portfolio -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal" data-category="web">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-accent/20 via-dark-800 to-primary/15">
+            <i class="ri-robot-line text-5xl text-accent/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">AI-driven Portfolio Website</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">
+              A fully responsive portfolio website featuring AI-driven elements, a "Contact Me" API, and filterable project sections.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">API</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">AI-driven Portfolio Website</h4>
+            <p class="text-dark-400 text-sm mb-4">Fully responsive | "Contact Me" API | Filterable project section.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 11: Motor Switching App -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal reveal-delay-1" data-category="mobile">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-emerald/20 via-dark-800 to-secondary/15">
+            <i class="ri-settings-2-line text-5xl text-emerald/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">Android Motor Switching App</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">Basic IoT control interface via Android application for motor switching.</p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">Android</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">Android Motor Switching App</h4>
+            <p class="text-dark-400 text-sm mb-4">Basic IoT control interface via Android.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Android</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 12: Calculator App -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal reveal-delay-2" data-category="mobile">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-secondary/15 via-dark-800 to-emerald/15">
+            <i class="ri-calculator-line text-5xl text-secondary/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">Calculator App (Android)</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">Simple arithmetic calculator with an intuitive Android Studio UI.</p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">Android</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">Calculator App (Android)</h4>
+            <p class="text-dark-400 text-sm mb-4">Simple arithmetic calculator with Android Studio UI.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Android</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 13: Internpedia App -->
+        <div class="project-card group relative bg-dark-800 rounded-xl overflow-hidden reveal" data-category="mobile">
+          <div class="project-thumb w-full h-48 bg-gradient-to-br from-emerald/15 via-dark-800 to-primary/15">
+            <i class="ri-smartphone-line text-5xl text-emerald/40"></i>
+          </div>
+          <div class="project-overlay absolute inset-0 bg-dark-900/90 flex flex-col justify-center items-center p-6 opacity-0">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2 text-center">Internpedia Android App (Java Internship)</h4>
+            <p class="text-dark-400 text-center text-sm mb-4">
+              A basic Android application developed during the Internpedia Java Internship training program.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-5 justify-center">
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Java</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-2 px-4">View Project</a>
+              <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm py-2 px-4">GitHub</a>
+            </div>
+          </div>
+          <div class="p-5">
+            <h4 class="text-dark-50 text-lg font-semibold mb-2">Internpedia Android App</h4>
+            <p class="text-dark-400 text-sm mb-4">Basic app built during internship training.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Java</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="py-24 relative">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark-50 mb-3">Workshops &amp; Internships</h2>
+        <div class="section-divider"></div>
+        <p class="text-dark-400 mt-5 max-w-2xl mx-auto">
+          I have participated in various internships and workshops that helped me explore real-world applications of my
+          academic knowledge in computer science and data analytics.
+        </p>
+      </div>
+
+      <div class="relative max-w-3xl mx-auto">
+        <!-- Timeline line -->
+        <div class="timeline-line"></div>
+
+        <!-- Experience 1 -->
+        <div class="timeline-item flex items-start w-full mb-10 reveal">
+          <div class="timeline-dot mt-6"></div>
+          <div class="timeline-content glass-card p-6 w-full md:w-[calc(50%-28px)] flex flex-col">
+            <h3 class="text-lg font-semibold text-dark-50 mb-2">Java Development Internship</h3>
+            <p class="gradient-text font-semibold text-sm mb-3">Internpedia | Jan 2024 – Mar 2024</p>
+            <p class="text-dark-400 text-sm leading-relaxed mb-3">
+              Completed a virtual internship focused on basic Java programming, covering OOPs concepts, file handling,
+              and project development using Java.
+            </p>
+            <ul class="text-dark-500 text-sm space-y-1.5">
+              <li class="flex items-start gap-2"><span class="text-secondary mt-0.5">▹</span>Created a mini banking application using Java Swing and JDBC.</li>
+              <li class="flex items-start gap-2"><span class="text-secondary mt-0.5">▹</span>Learned hands-on version control with Git during team tasks.</li>
+              <li class="flex items-start gap-2"><span class="text-secondary mt-0.5">▹</span>Collaborated with peers to present project ideas and demos.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item flex items-start w-full mb-10 reveal">
+          <div class="timeline-dot mt-6"></div>
+          <div class="timeline-content glass-card p-6 w-full md:w-[calc(50%-28px)] flex flex-col">
+            <h3 class="text-lg font-semibold text-dark-50 mb-2">Python Development Workshop</h3>
+            <p class="gradient-text font-semibold text-sm mb-3">Softpro India | Sep 2023</p>
+            <p class="text-dark-400 text-sm leading-relaxed mb-3">
+              Participated in a hands-on workshop that introduced core Python concepts, including data types, control
+              structures, and practical scripting.
+            </p>
+            <ul class="text-dark-500 text-sm space-y-1.5">
+              <li class="flex items-start gap-2"><span class="text-secondary mt-0.5">▹</span>Developed a calculator and simple CRUD application using Python.</li>
+              <li class="flex items-start gap-2"><span class="text-secondary mt-0.5">▹</span>Explored how Python is used in data analytics and web development.</li>
+              <li class="flex items-start gap-2"><span class="text-secondary mt-0.5">▹</span>Built foundational knowledge in Pandas and data visualization.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item flex items-start w-full mb-10 reveal">
+          <div class="timeline-dot mt-6"></div>
+          <div class="timeline-content glass-card p-6 w-full md:w-[calc(50%-28px)] flex flex-col">
+            <h3 class="text-lg font-semibold text-dark-50 mb-2">Ethical Hacking Workshop</h3>
+            <p class="gradient-text font-semibold text-sm mb-3">Netcamp Solutions Pvt. Ltd. | Aug 2023</p>
+            <p class="text-dark-400 text-sm leading-relaxed mb-3">
+              Attended a 2-day technical workshop on ethical hacking, network security, and cyber forensics conducted by
+              industry experts.
+            </p>
+            <ul class="text-dark-500 text-sm space-y-1.5">
+              <li class="flex items-start gap-2"><span class="text-secondary mt-0.5">▹</span>Understood ethical hacking tools like Kali Linux and Wireshark.</li>
+              <li class="flex items-start gap-2"><span class="text-secondary mt-0.5">▹</span>Simulated basic attacks in controlled lab environments.</li>
+              <li class="flex items-start gap-2"><span class="text-secondary mt-0.5">▹</span>Learned the fundamentals of cybersecurity and secure coding.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="py-24 relative">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark-50 mb-3">Get in Touch</h2>
+        <div class="section-divider"></div>
+        <p class="text-dark-400 mt-5 max-w-2xl mx-auto">
+          Have a project in mind or just want to say hi? Feel free to drop a message. I'm always open to discussing new
+          ideas and opportunities.
+        </p>
+      </div>
+
+      <div class="max-w-2xl mx-auto glass-card p-8 lg:p-10 reveal">
+        <form id="contact-form" action="https://formspree.io/f/manjaoea" method="POST" class="space-y-5">
+          <div>
+            <label for="name" class="block text-dark-300 font-medium mb-2 text-sm">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Awadhesh Pratap Singh" required autocomplete="name"
+              class="form-input" />
+          </div>
+          <div>
+            <label for="email" class="block text-dark-300 font-medium mb-2 text-sm">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"
+              class="form-input" />
+          </div>
+          <div>
+            <label for="subject" class="block text-dark-300 font-medium mb-2 text-sm">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Let's connect!" required
+              class="form-input" />
+          </div>
+          <div>
+            <label for="message" class="block text-dark-300 font-medium mb-2 text-sm">Your Message</label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Hi Awadhesh, I would like to collaborate with you..." required
+              class="form-input resize-y"></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full justify-center text-base py-3.5">
+            <i class="ri-send-plane-line mr-2"></i>Send Message
+          </button>
+          <div id="status-msg" class="text-center mt-3 text-sm font-semibold hidden"></div>
+        </form>
+      </div>
+
+      <div class="text-center mt-14 reveal">
+        <p class="text-dark-400 text-lg mb-5">You can also connect with me on:</p>
+        <div class="flex justify-center space-x-4">
+          <a href="https://github.com/Awadhesh3678" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+            class="social-icon w-12 h-12 flex items-center justify-center rounded-xl bg-dark-800 border border-dark-700 text-dark-400 hover:text-dark-50 hover:border-primary/30 text-xl transition-all">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/awadhesh-3678abc/" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+            class="social-icon w-12 h-12 flex items-center justify-center rounded-xl bg-dark-800 border border-dark-700 text-dark-400 hover:text-dark-50 hover:border-primary/30 text-xl transition-all">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a href="mailto:awadheshpratapsingh3678@gmail.com?subject=Let%27s%20Connect&body=Hi%20Awadhesh%2C%20I%20would%20like%20to%20connect%20with%20you..."
+            aria-label="Send Email"
+            class="social-icon w-12 h-12 flex items-center justify-center rounded-xl bg-dark-800 border border-dark-700 text-dark-400 hover:text-dark-50 hover:border-primary/30 text-xl transition-all">
+            <i class="ri-mail-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="border-t border-dark-700 py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-dark-400">&copy; <span id="footer-year">2026</span> Awadhesh Pratap Singh. All rights reserved.</p>
+      <p class="mt-2 text-dark-600 text-sm">Designed with <span class="text-red-400">❤️</span> by Awadhesh Pratap Singh</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <a href="#home" class="back-to-top w-12 h-12 flex items-center justify-center rounded-xl shadow-lg transition-all"
+    style="background: linear-gradient(135deg, #6366f1, #22d3ee);" aria-label="Back to top">
+    <i class="ri-arrow-up-line ri-lg text-white"></i>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
       theme: {
         extend: {
           colors: { primary: "#3b82f6", secondary: "#10b981" },
